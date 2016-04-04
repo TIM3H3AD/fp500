@@ -1,0 +1,40 @@
+THINGS
+belongs to USERS
+
+creator_id
+title
+description
+price
+image_1
+image_2
+btc_qr
+website
+checkout_link_cc
+checkout_btc
+hashtag
+view_count
+age
+location
+special offer
+broadcast
+
+USERS
+has many things
+
+name
+bio
+email
+location
+phone
+twitter
+facebook
+farmer_or_pirate
+logo
+wallpaper
+hashtags
+campaign
+crowdfund
+store
+view_count
+password_digest
+

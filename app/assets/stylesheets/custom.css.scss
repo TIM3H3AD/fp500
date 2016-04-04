@@ -1,0 +1,176 @@
+@import "bootstrap";
+/* universal */
+
+html {
+  text-align: center;
+  background-color:black;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-block;
+	text-align: center;
+	background-color:black;
+    }
+	
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+	background-color:black;
+  }
+  
+th {
+	font-family: 'Special Elite', cursive;
+    font-size: 1.5em;
+    background-color: orange;
+    color: black;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.col-centered{
+    float: center;
+    margin: 0 auto;
+}
+  
+/* typography */
+
+a:link, a:visited 
+	{
+	font-family: 'Cutive Mono';
+    background-color: black;
+    color: white;
+    border: 2px dotted orange;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	margin-bottom: 3px;
+    font-size: 16px;
+	}
+
+a:hover {
+font-family: 'Cutive Mono';
+background-color: black;
+    color: orange;
+	border: 2px dotted white;
+	margin-bottom: 3px;
+	}
+
+a:active {
+font-family: 'Cutive Mono';
+background-color: black;
+    color: #009AFE;
+	border: 2px dotted white;
+	margin-bottom: 3px;
+	}
+small {
+  font-family: 'Cutive Mono';
+  font-size: .75em;
+  letter-spacing: 1px;
+  color:white;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+p {
+  font-family: 'Cutive Mono';
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  color:white;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+h1 {       	/* whalebone */
+font-family: 'Bangers', cursive;
+  font-size: 4em;
+  letter-spacing: 0px;
+  text-align: center;
+  color:white;
+  vertical-align: bottom;
+}
+
+h2 {		/* title */
+font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+  color:white;
+  text-align: center;
+}
+
+h3 {		/* BTC address */
+  font-family: 'Cutive Mono';
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color:white;
+  text-align: center;
+}
+
+h4 { 		/* menu */
+font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+	color:white;
+    text-align: center;
+}
+
+h5 {		/* blackboard */
+font-family: 'Amatic SC', cursive;
+  font-size: 4em;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+  color:orange;
+  text-align: center;
+}
+
+h6 {		/* cafe banco */
+font-family: 'Sancreek', cursive;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color:white;
+}
+
+/* header */
+
+/* footer */
+
+footer a:link, footer a:visited 
+	{
+	font-family: 'Cutive Mono';
+    background-color: black;
+    color: white;
+    border: 2px dotted orange;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	margin-bottom: 3px;
+    font-size: 16px;
+	}
+
+footer a:hover {
+font-family: 'Cutive Mono';
+background-color: black;
+    color: orange;
+	border: 2px dotted white;
+	margin-bottom: 3px;
+	}
+
+footer a:active {
+font-family: 'Cutive Mono';
+background-color: black;
+    color: #009AFE;
+	border: 2px dotted white;
+	margin-bottom: 3px;
+	}
+
