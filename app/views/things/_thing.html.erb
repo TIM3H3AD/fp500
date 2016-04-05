@@ -1,23 +1,21 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3 col-sm-10 ">
     <div class="well border-blue" style="background: whitesmoke;">
-      <h4 class="text-center">
+      <h20>
         <%= link_to thing.title, thing_path(thing), class: 'custom-hover2', style: 'text-decoration: none;color:black;' %>
-      </h4>
-      <hr style="width: 30%; border: 1px solid black; margin-top: -2px;"/>
-
-      <h4>
+      </h20>
+	  <br>
+      <h21>
         <%= thing.description %>
-      </h4>
+      </h21>
       <br/>
-      <h5 style="font-size:1.1em;">
-        <span class="glyphicon glyphicon-map-marker"></span>  <%= thing.location %>
-      </h5>
-
-        <span class="pull-right">
+      <h21>
+	  <%= thing.location %>
+	  </h21>
+		<br>
+      <h21>
         Thing made by: <%= link_to thing.creator.name, user_path(thing.creator) %>
-      </span>
-      </h5>
+      </h21>
     </div>
   </div>
 </div>

@@ -3,45 +3,36 @@
 <div class="row" style="margin-top: 20px;">
   <div class="col-md-6 col-md-offset-1">
     <div class="well border-blue" style="background: whitesmoke;">
-      <h4 class="text-center">
-	  <h2> * <%= @thing.special_offer%> * </h2>
-	  <img src="/assets/<%= @thing.image_1 %>"> 
-        <%= link_to @thing.title, thing_path(@thing), class: 'custom-hover2', style: 'text-decoration: none;color:black;' %>
-      </h4>
-      <hr style="width: 30%; border: 1px solid black; margin-top: -2px;"/>
-
-      <h4>
-        <%= @thing.description %>
-      </h4>
+      <h21> * <%= @thing.special_offer%> * </h21>
 	  <hr>
-	  <h3><%= @thing.hashtag %></h3>
+      <%= link_to @thing.title, thing_path(@thing), class: 'custom-hover2', style: 'text-decoration: none;color:black;' %>
+      <hr>
+	  <img src="/assets/<%= @thing.image_1 %>"> 
+      <h21>
+        <%= @thing.description %>
+      </h21>
+	  <hr>
+	  <h20><%= @thing.hashtag %></h20>
 	  <hr>
       <br/>
-      <h5 style="font-size:1.1em;">
-        <span class="glyphicon glyphicon-map-marker"></span>  <%= @thing.location %>
-      </h5>
-
-<table align="center" cellpadding="10">
-<tr>
-<td align="center" valign="top">
-<h1><%= @thing.price %></h1>
-<hr>
-<p>WEBSITE</p>
-<p><a href="http://<%= @thing.website %>"><%= @thing.website %></a></p>
-<hr>
-<p>BUY NOW VIA SQUARE:</p>
-<p><a href="http://<%= @thing.checkout_cc %>"><%= @thing.checkout_cc %></a></p>
+      <h21>
+         <%= @thing.location %>
+      </h21><br>
+	  <h20><%= @thing.price %></h20>
+	  <hr>
+	<h20>WEBSITE</h20>
+	<br>
+    <h21><a href="http://<%= @thing.website %>"><%= @thing.website %></a></h21>
+      <hr>
+<h20>BUY NOW VIA SQUARE:</h20>
+<br>
+<h21><a href="http://<%= @thing.checkout_cc %>"><%= @thing.checkout_cc %></a></h21>
 <h2>~</h2>
-<p>BUY NOW VIA BITCOIN:</p>
-<p><a href="http://<%= @thing.checkout_btc %>"><%= @thing.checkout_btc %></a></p>
+<h20>BUY NOW VIA BITCOIN:</h20>
+<br>
+<h21><a href="http://<%= @thing.checkout_btc %>"><%= @thing.checkout_btc %></a></h21>
 <hr>
-<h4> POSTED BY: </h4>
-<%= @thing.creator.name %>
-<hr>
- <h5>
-<span class="pull-right">
-        Thing by: <%= link_to @thing.creator.name, user_path(@thing.creator) %>
-      </span>
-      </h5>
+<h20> This T-H-I-N-G by: <%= link_to @thing.creator.name, user_path(@thing.creator) %>
+</h20>
     </div>
 </div>
