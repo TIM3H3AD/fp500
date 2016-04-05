@@ -11,6 +11,7 @@ body {
     margin-right: 10%;
     display: inline-block;
 	text-align: center;
+	padding-top: 60px; 
 	background-color:black;
     }
 	
@@ -136,6 +137,24 @@ font-family: 'Sancreek', cursive;
   font-size: 1.5em;
   letter-spacing: 1px;
   color:white;
+}
+
+p2 {
+  font-family: 'Cutive Mono';
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  color:black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h20 {		/* title black */
+font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+  color:black;
+  text-align: center;
 }
 
 
