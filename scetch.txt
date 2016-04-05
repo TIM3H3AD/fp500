@@ -9,7 +9,7 @@ image_1
 image_2
 btc_qr
 website
-checkout_link_cc
+checkout_cc
 checkout_btc
 hashtag
 view_count
@@ -37,4 +37,5 @@ crowdfund
 store
 view_count
 password_digest
+admin
 

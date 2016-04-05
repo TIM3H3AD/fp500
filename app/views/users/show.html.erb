@@ -1,0 +1,10 @@
+<% provide(:title, @user.name + "'s things") %>
+
+<% if @created_things.any? %>
+
+<h1 class="text-center">Thing of things:</h1>
+
+<%= render @created_things %>
+
+<% end %>
+

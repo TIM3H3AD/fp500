@@ -1,0 +1,49 @@
+
+
+<div class="row" style="margin-top: -10px;">
+  <h1 class="text-center" style="font-weight: normal; color:white;">Make a Thing</h1>
+  <hr style="width:30%;"/>
+  <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+    <div class="well" id="about-well">
+
+      <%= form_for @thing do |f| %>
+          <%= render 'shared/error_messages', object: f.object %>
+
+          <%= f.label :name %> *
+          <%= f.text_field :title, class: "form-control custom-form-control" %><br>
+
+          <%= f.label :description %> *
+          <%= f.text_area :description, class: "form-control custom-form-control", size:'25x5'%><br>
+
+          <%= f.label :location %> *
+          <%= f.text_field :location, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :price %> *
+          <%= f.text_field :price, class: "form-control custom-form-control" %><br>
+		  
+		  <hr>
+		  
+		  <%= f.label :image %>
+          <%= f.text_field :image_1, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :website %>
+          <%= f.text_field :website, class: "form-control custom-form-control" %><br>
+
+		  <%= f.label :credit_card_checkout_link %>
+          <%= f.text_field :checkout_cc, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :bitcoin_checkout_link %>
+          <%= f.text_field :checkout_btc, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :hashtags %>
+          <%= f.text_field :hashtag, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :special_offer %>
+          <%= f.text_field :special_offer, class: "form-control custom-form-control" %><br>
+		  
+          <br>
+          <%= f.submit @thing.new_record? ? "Make it!" : "Edit", class: "btn btn-block purple-button" %>
+      <% end %>
+    </div>
+  </div>
+</div>

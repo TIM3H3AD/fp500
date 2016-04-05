@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <link href='https://fonts.googleapis.com/css?family=Bangers|Special+Elite|Permanent+Marker|Cutive+Mono|Amatic+SC|Sancreek' rel='stylesheet' type='text/css'>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>XOtoZ {detroit}</title>
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+<head>
+  <%= favicon_link_tag 'favicon.ico' %>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+body { padding-top: 90px; }
+<%= render 'layouts/header' %>
 
-    <%= csrf_meta_tags %>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<div class="container-fluid" id="wrap">
+<div class="row">
 
-    <ul class="hmenu">
+<%= render 'shared/flash_messages' %>
 
-    </ul>
+</div>
+  <%= yield %>
+</div>
 
-    <%= yield %>
 
-  </body>
+
+<%= render 'layouts/footer' %>
+
+<%= debug(params) if Rails.env.development? %>
+</body>
 </html>

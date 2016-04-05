@@ -1,0 +1,47 @@
+<% provide(:title, @thing.title) %>
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-6 col-md-offset-1">
+    <div class="well border-blue" style="background: whitesmoke;">
+      <h4 class="text-center">
+	  <h2> * <%= @thing.special_offer%> * </h2>
+	  <img src="/assets/<%= @thing.image_1 %>"> 
+        <%= link_to @thing.title, thing_path(@thing), class: 'custom-hover2', style: 'text-decoration: none;color:black;' %>
+      </h4>
+      <hr style="width: 30%; border: 1px solid black; margin-top: -2px;"/>
+
+      <h4>
+        <%= @thing.description %>
+      </h4>
+	  <hr>
+	  <h3><%= @thing.hashtag %></h3>
+	  <hr>
+      <br/>
+      <h5 style="font-size:1.1em;">
+        <span class="glyphicon glyphicon-map-marker"></span>  <%= @thing.location %>
+      </h5>
+
+<table align="center" cellpadding="10">
+<tr>
+<td align="center" valign="top">
+<h1><%= @thing.price %></h1>
+<hr>
+<p>WEBSITE</p>
+<p><a href="http://<%= @thing.website %>"><%= @thing.website %></a></p>
+<hr>
+<p>BUY NOW VIA SQUARE:</p>
+<p><a href="http://<%= @thing.checkout_cc %>"><%= @thing.checkout_cc %></a></p>
+<h2>~</h2>
+<p>BUY NOW VIA BITCOIN:</p>
+<p><a href="http://<%= @thing.checkout_btc %>"><%= @thing.checkout_btc %></a></p>
+<hr>
+<h4> POSTED BY: </h4>
+<%= @thing.creator.name %>
+<hr>
+ <h5>
+<span class="pull-right">
+        Thing by: <%= link_to @thing.creator.name, user_path(@thing.creator) %>
+      </span>
+      </h5>
+    </div>
+</div>
