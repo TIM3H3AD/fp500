@@ -11,7 +11,7 @@
 
 "Swimmmingly good listing of T-H-I-N-G-S"
 </p>
-          <hr class="intro-divider">
+<hr class="intro-divider">
           <ul class="list-inline intro-social-buttons">
 
             <% if !logged_in? %>
@@ -29,9 +29,27 @@
 
             <% end %>
           </ul>
-
-		  
-		  
+<hr>
+<table class="center" cellpadding="10">
+    <tr align="center">
+		<th></th>
+		<th>Title</th>
+        <th>$$$</th>
+		<th>Location</th>
+		<th>Maker</th>
+	</tr>
+	
+  <% @things.each do |thing| %>
+   <tr align="center">
+	  <td></td>
+      <td><p><%= thing.title %></p> </td>
+	  <td><p><%= number_to_currency(thing.price, :unit => "$") %></p> </td>
+	  <td><p><%= thing.location %></p> </td>
+	  <td><p><%= link_to thing.creator.name, user_path(thing.creator) %></p> </td>
+   </tr>
+  <% end %>
+</table>
+           
 		  
         </div>
       </div>

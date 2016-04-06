@@ -10,6 +10,6 @@ class Thing < ActiveRecord::Base
   validates :location, presence: true, length: {maximum: 30}
   validates :price, presence: true
 
-  default_scope -> {order('title desc')}
+  default_scope -> {order('title asc')}
 
   end
