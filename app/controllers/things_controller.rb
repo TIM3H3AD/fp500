@@ -12,7 +12,7 @@ class ThingsController < ApplicationController
       flash[:success] = "You have added a new Thing!"
       redirect_to @thing #things_path later
     else
-      flash[:danger] = "The form contains erros"
+      flash[:danger] = "The form contains errors"
       render :new
     end
   end

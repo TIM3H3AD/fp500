@@ -34,9 +34,10 @@
           <%= f.text_field :facebook, class: "form-control custom-form-control" %></br>
 		  
 		  <hr>
-		
 		  <%= f.label :farmer_or_pirate? %>
-          <%= f.text_field :farmer_or_pirate, class: "form-control custom-form-control" %></br>
+		  <%= select_tag "farmer_or_pirate", options_for_select([['farmer' ,'farmer'], ['pirate', 'pirate']]) %>
+
+          <hr>
 		  
 		  <%= f.label :logo %>
           <%= f.text_field :logo, class: "form-control custom-form-control" %></br>
