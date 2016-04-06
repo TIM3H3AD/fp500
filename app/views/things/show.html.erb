@@ -32,7 +32,7 @@
 <br>
 <h21><a href="http://<%= @thing.checkout_btc %>"><%= @thing.checkout_btc %></a></h21>
 <hr>
-<h20> This T-H-I-N-G by: <%= link_to @thing.creator.name, user_path(@thing.creator) %>
+<h20> <%= @thing.title %> by: <%= link_to @thing.creator.name, user_path(@thing.creator) %>
 </h20>
     </div>
 </div>

@@ -1,8 +1,6 @@
-<% provide(:title, @user.name + "'s things") %>
+<% provide(:title, @user.name) %>
 
 <% if @created_things.any? %>
-
-<h2>Thing of things:</h2>
 
 <%= render @created_things %>
 
