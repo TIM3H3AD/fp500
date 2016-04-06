@@ -18,7 +18,47 @@
 
           <%= f.label :password %>
           <%= f.password_field :password, class: "form-control custom-form-control" %></br>
-
+		  
+		  <hr>
+		  
+		  <%= f.label :location %>
+          <%= f.text_field :location, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :phone %>
+          <%= f.text_field :phone, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :twitter %>
+          <%= f.text_field :twitter, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :facebook %>
+          <%= f.text_field :facebook, class: "form-control custom-form-control" %></br>
+		  
+		  <hr>
+		
+		  <%= f.label :farmer_or_pirate? %>
+          <%= f.text_field :farmer_or_pirate, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :logo %>
+          <%= f.text_field :logo, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :wallpaper %>
+          <%= f.text_field :wallpaper, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :hashtag %>
+          <%= f.text_field :hashtag, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :campaign %>
+          <%= f.text_field :campaign, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :crowdfund %>
+          <%= f.text_field :crowdfund, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :store %>
+          <%= f.text_field :store, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :btc_address %>
+          <%= f.text_field :btc_address, class: "form-control custom-form-control" %></br>
+		  
           <% if @user.new_record? %>
               <%= f.label :password_confirmation %>
               <%= f.password_field :password_confirmation, class: "form-control custom-form-control" %><br/>
