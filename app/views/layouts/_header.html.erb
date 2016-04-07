@@ -11,6 +11,7 @@
       <%= link_to root_url, id: 'logo', class:'navbar-brand topnav custom-hover' do %>
           
          The F & P { <%= Thing.count %> }
+		 
       <% end %>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,13 +46,13 @@
 
             <li class="dropdown custom-hover">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Account <b class="caret"></b>
+                menu:{<%= current_user.name %>}</b>
               </a>
               <ul class="dropdown-menu" style="width: 230px;border-radius:10px;">
-                <li style="padding-left:10px;">Logged in as <%= current_user.name %></li>
+                <li style="padding-left:10px;">Hello, <%= current_user.name %>!</li>
                 <li class="divider"></li>
                 <li><%= link_to current_user do %>
-                      Your Things
+                      Your Things 
                   <% end %>
                 </li>
                 <li><%= link_to edit_user_path(current_user) do %>

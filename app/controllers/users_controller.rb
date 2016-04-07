@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
 
   def edit
-    @user = User.find(params[:id])
+  @user = User.find(params[:id])
   end
 
   def update
@@ -46,9 +46,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @created_things = @user.created_things
+	@created_things = @user.created_things
   end
-
 
   private
 
@@ -63,4 +62,4 @@ class UsersController < ApplicationController
   def create_user_instance
     @user = User.find(params[:id])
   end
-end
+ end

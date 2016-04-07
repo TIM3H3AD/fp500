@@ -43,7 +43,7 @@ class ThingsController < ApplicationController
   def destroy
     if @thing.destroy
       flash[:success] = "Your Thing was deleted successfully"
-      redirect_to things_path
+      redirect_to root_url
     else
       flash[:danger] = "Could not delete"
       render @thing
@@ -57,6 +57,7 @@ class ThingsController < ApplicationController
   end
 
   def correct_user
+  @thing = Thing.find(params[:id])
     if current_user != @thing.creator
       flash[:danger] = "You don't have permission to do that."
       redirect_to root_url
