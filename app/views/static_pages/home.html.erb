@@ -34,18 +34,18 @@
 <hr>
 <table class="center" cellpadding="10">
     <tr align="center">
-		<th></th>
 		<th>thing</th>
         <th>$$$</th>
 		<th>maker</th>
+	
 	</tr>
 	
   <% @things.each do |thing| %>
    <tr align="center">
-	  <td></td>
-      <td><p><%= thing.title %></p> </td>
+	  <td><p><%= link_to thing.title, thing_path(thing) %></p> </td>
 	  <td><p><%= number_to_currency(thing.price, :unit => "$") %></p> </td>
 	  <td><p><%= link_to thing.creator.name, user_path(thing.creator) %></p> </td>
+	 
    </tr>
   <% end %>
 </table>
