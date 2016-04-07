@@ -6,10 +6,12 @@
       <div class="col-lg-12">
         <div class="intro-message">
           <small><%= Time.now %> </small>
+		  
 <h2>Farmers' & Pirates'</h2>
-<br>
+<h5>[Detroit]</h5>
 <p>"A swimmmingly good listing of things."
 </p>
+
 <hr class="intro-divider">
           <ul class="list-inline intro-social-buttons">
 
@@ -35,7 +37,6 @@
 		<th></th>
 		<th>thing</th>
         <th>$$$</th>
-		<th>location</th>
 		<th>maker</th>
 	</tr>
 	
@@ -44,7 +45,6 @@
 	  <td></td>
       <td><p><%= thing.title %></p> </td>
 	  <td><p><%= number_to_currency(thing.price, :unit => "$") %></p> </td>
-	  <td><p><%= thing.location %></p> </td>
 	  <td><p><%= link_to thing.creator.name, user_path(thing.creator) %></p> </td>
    </tr>
   <% end %>
