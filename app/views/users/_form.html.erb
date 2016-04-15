@@ -9,17 +9,18 @@
 
       <%= form_for @user do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
+		  
+		  <h20> * = required </h20>
+		  <br>
 
-          <%= f.label :name %>
+          <%= f.label :name %> <h20>*</h20>
           <%= f.text_field :name, class: "form-control custom-form-control" %><br/>
 
-          <%= f.label :email %>
+          <%= f.label :email %> <h20>*</h20>
           <%= f.text_field :email, class: "form-control custom-form-control", disabled: is_disabled %><br/>
 
-          <%= f.label :password %>
+          <%= f.label :password %> <h20>*</h20>
           <%= f.password_field :password, class: "form-control custom-form-control" %></br>
-		  
-		  <hr>
 		  
 		  <%= f.label :location %>
           <%= f.text_field :location, class: "form-control custom-form-control" %></br>
@@ -36,7 +37,6 @@
 		  <hr>
 		  <%= f.label :farmer_or_pirate? %>
 		  <%= select_tag "farmer_or_pirate", options_for_select([['farmer' ,'farmer'], ['pirate', 'pirate']]) %>
-
           <hr>
 		  
 		  <%= f.label :logo %>

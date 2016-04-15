@@ -8,6 +8,9 @@
 
       <%= form_for @thing do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
+		  
+		  <h20> * = required </h20>
+		  <br>
 
           <%= f.label :name %> *
           <%= f.text_field :title, class: "form-control custom-form-control" %><br>

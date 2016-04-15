@@ -11,26 +11,6 @@
 <p>"A swimmmingly good listing of things."
 </p>
 
-<hr class="intro-divider">
-          <ul class="list-inline intro-social-buttons">
-
-            <% if !logged_in? %>
-                <li>
-                  <%= link_to signup_path, class: "btn btn-default btn-lg" do %>
-                      <span class="network-name">Sign Up!</span>
-                  <% end %>
-                </li>
-            <% else %>
-                <li>
-				<p>You are logged in!</p><br>
-                  <%= link_to new_thing_path, class: "btn btn-default btn-lg" do %>
-                     <span class="network-name">Make-A-Thing</span>
-                  <% end %>
-                </li>
-
-            <% end %>
-          </ul>
-<hr>
 <table class="center" cellpadding="10">
     <tr align="center">
 		<th>thing</th>
