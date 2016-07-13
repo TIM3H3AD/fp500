@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   get '/about' => 'static_pages#about'
   get '/u' => 'static_pages#u'
-  get '/blm' => 'static_pages#blm'
-  get '/BLM' => 'static_pages#blm'
+  get '/blm' => 'static_pages#BLM'
+  get '/BLM' => 'static_pages#BLM'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
