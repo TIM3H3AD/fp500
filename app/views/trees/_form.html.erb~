@@ -1,4 +1,7 @@
+<% action_name == 'edit' ? is_disabled = true : is_disabled = false %>
 
+<h1 class="text-center" style="font-weight: normal'><%= is_disabled ? "Edit" : "Register" %></h1>
+<hr/>
 
 <div class="row" style="margin-top: -10px;">
   <h4 class="text-center" style="font-weight: normal; color:white;">#313treeproject</h4>
@@ -35,13 +38,13 @@
 		  
 		  <h6>SUGGEST AN ARBORIST</h6>
 		  
-		  <%= f.label :image %>
+		  <%= f.label :company_name %>
           <%= f.text_field :company_name, class: "form-control custom-form-control" %><br>
 		  
-		  <%= f.label :website %>
+		  <%= f.label :company_contact %>
           <%= f.text_field :company_contact, class: "form-control custom-form-control" %><br>
 
-		  <%= f.label :credit_card_checkout_link %>
+		  <%= f.label :compant_phone %>
           <%= f.text_field :company_phone, class: "form-control custom-form-control" %><br>
 		  
 		  <hr>		 		  

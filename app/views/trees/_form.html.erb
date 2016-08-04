@@ -12,8 +12,6 @@
 <%= form_for @tree do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
 		  
-			  <br>		  
-			  
 		  <h6>REQUEST TREE WORK</h6>
 
           <%= f.label :tree_owner_name %>
@@ -38,19 +36,19 @@
 		  
 		  <h6>SUGGEST AN ARBORIST</h6>
 		  
-		  <%= f.label :image %>
+		  <%= f.label :company_name %>
           <%= f.text_field :company_name, class: "form-control custom-form-control" %><br>
 		  
-		  <%= f.label :website %>
+		  <%= f.label :company_contact %>
           <%= f.text_field :company_contact, class: "form-control custom-form-control" %><br>
 
-		  <%= f.label :credit_card_checkout_link %>
+		  <%= f.label :compant_phone %>
           <%= f.text_field :company_phone, class: "form-control custom-form-control" %><br>
 		  
 		  <hr>		 		  
 		  
           <br>
-          <%= f.submit @tree.new_record? ? "COMPLETE!" : "Edit", class: "btn btn-block purple-button" %>
+          <%= f.submit @tree.new_record? ? "SEND INFORMATION" : "Edit", class: "btn btn-block purple-button" %>
       <% end %>
     </div>
   </div>
