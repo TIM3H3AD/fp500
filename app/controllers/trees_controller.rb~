@@ -7,8 +7,8 @@ class TreesController < ApplicationController
  def create
   @tree = Tree.new(params[:tree].permit(:name, :address, :zip_code, :owner_phone, :current_estimate, :message, :company_name, :company_contact, :company_phone))
  
-  if @coin.save
-    redirect_to @coin
+  if @tree.save
+    redirect_to @tree
   else
     render 'new'
   end
