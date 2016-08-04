@@ -1,7 +1,4 @@
-<% action_name == 'edit' ? is_disabled = true : is_disabled = false %>
 
-<h1 class="text-center" style="font-weight: normal'><%= is_disabled ? "Edit" : "Register" %></h1>
-<hr/>
 
 <div class="row" style="margin-top: -10px;">
   <h4 class="text-center" style="font-weight: normal; color:white;">Make-a-Thing</h4>
