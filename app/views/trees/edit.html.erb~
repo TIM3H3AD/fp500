@@ -1,0 +1,4 @@
+<% provide(:title, @thing.title) %>
+<div class="intro-header2">
+  <%= render 'things/form' %>
+</div>
