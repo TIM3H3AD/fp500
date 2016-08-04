@@ -32,7 +32,7 @@ end
       flash[:success] = "Update successful"
       redirect_to @tree
     else
-      flash[:danger] = "Sometree went wrong"
+      flash[:danger] = "Something went wrong"
       render :edit
     end
   end
