@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160405005910) do
+ActiveRecord::Schema.define(version: 20160804143731) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,21 @@ ActiveRecord::Schema.define(version: 20160405005910) do
     t.datetime "updated_at",    null: false
   end
 
+  create_table "trees", force: :cascade do |t|
+    t.string   "owner_name"
+    t.string   "adress"
+    t.integer  "zip_code"
+    t.string   "owner_phone"
+    t.integer  "current_estimate"
+    t.integer  "actual_cost"
+    t.text     "message"
+    t.string   "company_name"
+    t.string   "company_contact"
+    t.string   "company_phone"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.text     "bio"
@@ -56,7 +71,7 @@ ActiveRecord::Schema.define(version: 20160405005910) do
     t.string   "password_digest"
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
-    t.boolean  "admin",                         default: false
+    t.boolean  "admin",            default: false
     t.string   "btc_address"
   end
 
