@@ -1,4 +1,3 @@
-
 <% action_name == 'edit' ? is_disabled = true : is_disabled = false %>
 
 <h1 class="text-center" style="font-weight: normal'><%= is_disabled ? "Edit" : "Register" %></h1>
