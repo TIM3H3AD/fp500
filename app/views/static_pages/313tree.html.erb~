@@ -1,6 +1,12 @@
 <h1>#313treeproject</h1>
 <p>Supporting emergency arbor work to stabilize communities by protecting Detroit homeowners from life threatening foliage.</p>
 <hr>
+<%= link_to new_tree_path do %>
+          
+         REQUEST TREE SERVICE or SUGGEST ARBORIST
+		 
+      <% end %>	
+<hr>
 <h6>SUPPORT THE PROJECT</h6>
 <p><a href="https://www.xotoz.com/users/3"> Buy Soap! </a>
 <i>$1 from each bar sold will support the #313treeproject</i></p>
@@ -12,8 +18,7 @@
 
 <p>To list your product or service here, please email <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></p>
 <hr>
-	<a href="http://www.xotoz.com/trees/new">Report tree or suggest an arbor!</a>	  
-<hr>
+  
 <p>Need support completing your request? Please, email <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></p>
 
 
