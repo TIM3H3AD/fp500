@@ -9,11 +9,7 @@
 <%= form_for @tree do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
 		  
-			  <br>
-			
-		  <h6>SUPPORT THE PROJECT</h6>
-				
-			  
+			  <br>		  
 			  
 		  <h6>REQUEST TREE WORK</h6>
 
@@ -32,40 +28,23 @@
 		  <%= f.label :current_estimate %> This helps us track overall project savings and is not required
           <%= f.text_field :current_estimate, class: "form-control custom-form-control" %><br>
 		  
-		  <%= f.label :current_estimate %> This helps us track overall project savings and is not required
-          <%= f.text_field :current_estimate, class: "form-control custom-form-control" %><br>
+		  <%= f.label :special_message %> Let us know if there is anything else you think we need to know here.
+          <%= f.text_area :message, class: "form-control custom-form-control" %><br>
 		  
 		  <hr>
 		  
 		  <h6>SUGGEST AN ARBORIST</h6>
 		  
 		  <%= f.label :image %>
-          <%= f.text_field :image_1, class: "form-control custom-form-control" %><br>
+          <%= f.text_field :company_name, class: "form-control custom-form-control" %><br>
 		  
 		  <%= f.label :website %>
-          <%= f.text_field :website, class: "form-control custom-form-control" %><br>
+          <%= f.text_field :company_contact, class: "form-control custom-form-control" %><br>
 
 		  <%= f.label :credit_card_checkout_link %>
-          <%= f.text_field :checkout_cc, class: "form-control custom-form-control" %><br>
+          <%= f.text_field :company_phone, class: "form-control custom-form-control" %><br>
 		  
-		  <%= f.label :bitcoin_checkout_link %>
-          <%= f.text_field :checkout_btc, class: "form-control custom-form-control" %><br>
-		  
-		  <%= f.label :hashtags %>
-          <%= f.text_field :hashtag, class: "form-control custom-form-control" %><br>
-		  
-		  <%= f.label :special_offer %>
-          <%= f.text_field :special_offer, class: "form-control custom-form-control" %><br>
-		  
-		  <hr>
-
-    t.integer  "actual_cost"
-    t.text     "message"
-    t.string   "company_name"
-    t.string   "company_contact"
-    t.string   "company_phone"
-		  
-		  
+		  <hr>		 		  
 		  
           <br>
           <%= f.submit @tree.new_record? ? "COMPLETE!" : "Edit", class: "btn btn-block purple-button" %>

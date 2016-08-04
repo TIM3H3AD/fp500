@@ -12,10 +12,58 @@
 
 <p>To list your product or service here, please email <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></p>
 
-<h6>REQUEST TREE WORK</h6>
+<div class="row" style="margin-top: -10px;">
+  <h4 class="text-center" style="font-weight: normal; color:white;">#313treeproject</h4>
+  <hr style="width:30%;"/>
+  <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+    <div class="well" id="about-well">
 
+<%= form_for @tree do |f| %>
+          <%= render 'shared/error_messages', object: f.object %>
+		  
+			  <br>		  
+			  
+		  <h6>REQUEST TREE WORK</h6>
 
-<h6>SUGGEST AN ARBORIST</h6>
+          <%= f.label :tree_owner_name %>
+          <%= f.text_field :name, class: "form-control custom-form-control" %><br>
+
+          <%= f.label :tree_address %>
+          <%= f.text_field :adress, class: "form-control custom-form-control", size:'25x5'%><br>
+
+          <%= f.label :tree_zip_code %>
+          <%= f.text_field :zip_code, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :owner_phone %>
+          <%= f.text_field :owner_phone, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :current_estimate %> This helps us track overall project savings and is not required
+          <%= f.text_field :current_estimate, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :special_message %> Let us know if there is anything else you think we need to know here.
+          <%= f.text_area :message, class: "form-control custom-form-control" %><br>
+		  
+		  <hr>
+		  
+		  <h6>SUGGEST AN ARBORIST</h6>
+		  
+		  <%= f.label :image %>
+          <%= f.text_field :company_name, class: "form-control custom-form-control" %><br>
+		  
+		  <%= f.label :website %>
+          <%= f.text_field :company_contact, class: "form-control custom-form-control" %><br>
+
+		  <%= f.label :credit_card_checkout_link %>
+          <%= f.text_field :company_phone, class: "form-control custom-form-control" %><br>
+		  
+		  <hr>		 		  
+		  
+          <br>
+          <%= f.submit @tree.new_record? ? "COMPLETE!" : "Edit", class: "btn btn-block purple-button" %>
+      <% end %>
+    </div>
+  </div>
+</div>
 
 <hr>
 <p>Need support completing your request? Please, email <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></p>
