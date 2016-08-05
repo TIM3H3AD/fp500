@@ -5,13 +5,14 @@ class TreesController < ApplicationController
   end
 
  def create
-  @tree = Tree.new(params[:tree].permit
- 
-  if @tree.save
-    redirect_to @tree
-  else
-    render 'new'
-  end
+    @tree = Tree.new(tree_params)
+    if @tree.save
+      flash[:success] = "You have added a new tree request!"
+      redirect_to @tree #trees_path later
+    else
+      flash[:danger] = "The form contains errors"
+      render :new
+    end
 end
 
   def index
@@ -45,6 +46,12 @@ end
       flash[:danger] = "Could not delete"
       render @tree
     end
+  end
+
+private
+
+  def tree_params
+    params.require(:tree).permit(:owner_name, :adress, :zip_code, :message, :current_estimate, :company_name, :company_contact, :company_phone)
   end
 
  end

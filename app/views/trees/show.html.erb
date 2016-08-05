@@ -1,13 +1,14 @@
-<% provide(:title, @tree.address) %>
+<% provide(:title, @tree.adress) %>
 
 <div class="row" style="margin-top: 20px;">
   <div class="col-md-6 col-md-offset-1">
     <div class="well border-blue" style="background: whitesmoke;">
-      <h21> * <%= @tree.address%> * </h21>
+
+<h21> * <%= @tree.adress %> * </h21>
 	<hr>
 <h21><%= @tree.zip_code %></h21>
 	<hr>
-<h20><%= @tree.name %></h20>
+<h20><%= @tree.owner_name %></h20>
      	  <hr>
 <h20><%= @tree.owner_phone %></h20>
 	  <hr> 
@@ -21,5 +22,11 @@
 	  <hr> 
 <h20><%= @tree.company_phone %></h20>
 	  <hr>
+<p>Your request has been delivered.</p><p>
+<%= link_to new_tree_path do %>
+          
+         New Tree Request Form
+		 
+      <% end %>
     </div>
 </div>

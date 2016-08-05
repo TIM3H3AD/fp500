@@ -12,12 +12,10 @@
 <%= form_for @tree do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
 		  
-			  <br>		  
-			  
 		  <h6>REQUEST TREE WORK</h6>
 
           <%= f.label :tree_owner_name %>
-          <%= f.text_field :name, class: "form-control custom-form-control" %><br>
+          <%= f.text_field :owner_name, class: "form-control custom-form-control" %><br>
 
           <%= f.label :tree_address %>
           <%= f.text_field :adress, class: "form-control custom-form-control", size:'25x5'%><br>
@@ -50,7 +48,7 @@
 		  <hr>		 		  
 		  
           <br>
-          <%= f.submit @tree.new_record? ? "COMPLETE!" : "Edit", class: "btn btn-block purple-button" %>
+          <%= f.submit @tree.new_record? ? "SEND INFORMATION" : "Edit", class: "btn btn-block purple-button" %>
       <% end %>
     </div>
   </div>
