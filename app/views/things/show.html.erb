@@ -3,24 +3,27 @@
 <div class="row" style="margin-top: 20px;">
   <div class="col-md-6 col-md-offset-1">
     <div class="well border-blue" style="background: whitesmoke;">
-      <h21> * <%= @thing.special_offer%> * </h21>
+      <h21><%= @thing.special_offer%></h21>
 	  <hr>
-      <%= link_to @thing.title, thing_path(@thing), class: 'custom-hover2', style: 'text-decoration: none;color:black;' %>
+	 <small>[beta 1.1] image coming soon!
       <hr>
-	  <img src="/assets/<%= @thing.image_1 %>"> 
+      <%= link_to @thing.title, thing_path(@thing), class: 'custom-hover2', style: 'text-decoration: none;color:black;' %>
+     <h20>}~{</h20>
       <h21>
         <%= @thing.description %>
       </h21>
+<br>
+      <h21>
+      <small>LOCATION</small>
+      <%= @thing.location %>
+      </h21>
+      <small>PRICE U$D</small>
+      <h20><%= number_to_currency(@thing.price, :unit => "$") %></h20>
 	  <hr>
+	  <small>HASHTAGS</small>
 	  <h20><%= @thing.hashtag %></h20>
 	  <hr>
-      <br/>
-      <h21>
-      <%= @thing.location %>
-      </h21><br>
-	  <h20><%= @thing.price %></h20>
-	  <hr>
-	<h20>WEBSITE</h20>
+      	<h20>WEBSITE</h20>
 	<br>
     <h21><a href="http://<%= @thing.website %>"><%= @thing.website %></a></h21>
       <hr>
