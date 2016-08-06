@@ -53,7 +53,7 @@ class ThingsController < ApplicationController
   private
 
   def thing_params
-    params.require(:thing).permit(:title, :description, :location, :price, :website, :checkout_cc, :checkout_btc, :hashtag, :special_offer)
+    params.require(:thing).permit(:title, :description, :location, :price)
   end
 
   def correct_user

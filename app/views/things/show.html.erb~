@@ -1,0 +1,38 @@
+<% provide(:title, @thing.title) %>
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-6 col-md-offset-1">
+    <div class="well border-blue" style="background: whitesmoke;">
+      <h21> * <%= @thing.special_offer%> * </h21>
+	  <hr>
+      <%= link_to @thing.title, thing_path(@thing), class: 'custom-hover2', style: 'text-decoration: none;color:black;' %>
+      <hr>
+	  <img src="/assets/<%= @thing.image_1 %>"> 
+      <h21>
+        <%= @thing.description %>
+      </h21>
+	  <hr>
+	  <h20><%= @thing.hashtag %></h20>
+	  <hr>
+      <br/>
+      <h21>
+      <%= @thing.location %>
+      </h21><br>
+	  <h20><%= @thing.price %></h20>
+	  <hr>
+	<h20>WEBSITE</h20>
+	<br>
+    <h21><a href="http://<%= @thing.website %>"><%= @thing.website %></a></h21>
+      <hr>
+<h20>BUY NOW VIA SQUARE:</h20>
+<br>
+<h21><a href="http://<%= @thing.checkout_cc %>"><%= @thing.checkout_cc %></a></h21>
+<h2>~</h2>
+<h20>BUY NOW VIA BITCOIN:</h20>
+<br>
+<h21><a href="http://<%= @thing.checkout_btc %>"><%= @thing.checkout_btc %></a></h21>
+<hr>
+<h20> <%= @thing.title %> by: <%= link_to @thing.creator.name, user_path(@thing.creator) %>
+</h20>
+    </div>
+</div>
