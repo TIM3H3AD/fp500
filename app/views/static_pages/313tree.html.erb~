@@ -1,7 +1,9 @@
 <h1>#313treeproject</h1>
 <p>Supporting emergency arbor work to stabilize communities by protecting Detroit homeowners from life threatening foliage.</p>
 <hr>
-
+ <%= link_to new_tree_path do %>
+                  Submit a tree service request or suggest an arborist
+              <% end %>
 <p>Please email your address and phone number or your recommendation for an arborist to join our project. 
 <br>Send to <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></p>
 <hr>
