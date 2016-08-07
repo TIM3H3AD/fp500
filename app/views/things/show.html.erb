@@ -29,15 +29,16 @@
 	  <hr>
       	<h20>WEBSITE</h20>
 	<br>
-    <h21><a href="http://<%= @thing.website %>"><%= @thing.website %></a></h21>
+    <h21>
+    <a href="http://<%= @thing.website %>" target="blank"><%= @thing.website %></a></h21>
       <hr>
 <h20>BUY NOW VIA SQUARE:</h20>
 <br>
-<h21><a href="http://<%= @thing.checkout_cc %>"><%= @thing.checkout_cc %></a></h21>
+<h21><a href="http://<%= @thing.checkout_cc %>" target="blank"><%= @thing.checkout_cc %></a></h21>
 <h2>~</h2>
 <h20>BUY NOW VIA BITCOIN:</h20>
 <br>
-<h21><a href="http://<%= @thing.checkout_btc %>"><%= @thing.checkout_btc %></a></h21>
+<h21><a href="http://<%= @thing.checkout_btc %>" target="blank"><%= @thing.checkout_btc %></a></h21>
 <hr>
 <h20> <%= @thing.title %> by: <%= link_to @thing.creator.name, user_path(@thing.creator) %>
 </h20>

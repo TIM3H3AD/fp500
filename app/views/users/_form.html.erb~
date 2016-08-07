@@ -19,9 +19,6 @@
           <%= f.label :email %> <h20>*</h20>
           <%= f.text_field :email, class: "form-control custom-form-control", disabled: is_disabled %><br/>
 
-          <%= f.label :about %>
-          <%= f.text_area :bio, class: "form-control custom-form-control" %></br>
-          
           <%= f.label :password %> <h20>*</h20>
           <%= f.password_field :password, class: "form-control custom-form-control" %></br>
 		  
@@ -41,17 +38,23 @@
 		  <%= f.label :farmer_or_pirate? %>
 		  <%= select_tag "farmer_or_pirate", options_for_select([['farmer' ,'farmer'], ['pirate', 'pirate']]) %>
           <hr>
-		  		  
+		  
+		  <%= f.label :logo %>
+          <%= f.text_field :logo, class: "form-control custom-form-control" %></br>
+		  
+		  <%= f.label :wallpaper %>
+          <%= f.text_field :wallpaper, class: "form-control custom-form-control" %></br>
+		  
 		  <%= f.label :hashtag %>
           <%= f.text_field :hashtag, class: "form-control custom-form-control" %></br>
 		  
-		  <%= f.label :campaign_url %>
+		  <%= f.label :campaign %>
           <%= f.text_field :campaign, class: "form-control custom-form-control" %></br>
 		  
-		  <%= f.label :crowdfund_url %>
+		  <%= f.label :crowdfund %>
           <%= f.text_field :crowdfund, class: "form-control custom-form-control" %></br>
 		  
-		  <%= f.label :website_url %>
+		  <%= f.label :store %>
           <%= f.text_field :store, class: "form-control custom-form-control" %></br>
 		  
 		  <%= f.label :btc_address %>
