@@ -6,7 +6,7 @@
 <div class="row" style="margin-top: -10px;">
   <h4 class="text-center" style="font-weight: normal; color:white;">#313treeproject</h4>
    <hr style="width:30%;"/>
-  <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+   <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
     <div class="well" id="about-well">
 
 <%= form_for @tree do |f| %>
@@ -14,6 +14,7 @@
           
           
 		  <h20>TREE SUPPORT REQUEST</h20>
+		  <small><a href="mailto:ter.reub@gmail.com">Need support completing your request?</a></small>
 
           <%= f.label :tree_owner_name? %>
           <%= f.text_field :owner_name, class: "form-control custom-form-control" %><br>
@@ -35,8 +36,8 @@
 		  
 		  <hr>
 		  
-		 <%= f.submit @tree.new_record? ? "SEND INFORMATION" : "Edit", class: "btn btn-block purple-button" %>
+		 <%= f.submit @tree.new_record? ? "SEND REQUEST" : "Edit", class: "btn btn-block purple-button" %>
       <% end %>
     </div>
-  </div>
+    </div>
 </div>
