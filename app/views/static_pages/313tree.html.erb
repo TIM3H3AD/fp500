@@ -24,6 +24,18 @@
 <hr>
 <small>Would you like to list your product or service? Pls email me! <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></small>
 <hr>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 col-sm-10 ">
+ <% @trees = Tree.all() %>
+ <% @trees.each do |tree| %>
+   <tr align="left">
+	  <td></td>
+      <td><p><%= tree.owner_name %></p> </td>
+	  <td><p><%= tree.adress %></p> </td>
+	  <td align="center"><p><%= tree.zip_code %></p> </td>
+     </tr>
+  <% end %>
+	 
   
 
 

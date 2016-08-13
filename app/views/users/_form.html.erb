@@ -38,8 +38,14 @@
           <%= f.text_field :facebook, class: "form-control custom-form-control" %></br>
 		  
 		  <hr>
-		  <%= f.label :farmer_or_pirate? %>
-		  <%= select_tag "farmer_or_pirate", options_for_select([['farmer' ,'farmer'], ['pirate', 'pirate']]) %>
+		  <hr>
+ <%= radio_button("farmer_or_pirate?", "FARMER") %>
+ <%= label_tag(:farmer_or_pirate, "FARMER") %><br>
+  <%= radio_button("farmer_or_pirate?", "PIRATE") %>
+ <%= label_tag(:farmer_or_pirate, "PIRATE") %><br>
+ 
+ <%= f.submit "Add Expense" %>
+ <hr>
           <hr>
 		  		  
 		  <%= f.label :hashtag %>
