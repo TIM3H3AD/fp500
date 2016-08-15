@@ -22,9 +22,10 @@
 	  <hr> 
 <h20><%= @tree.company_phone %></h20>
 	  <hr>
-<%= link_to root_url#313tree do %>
+<p>Your request has been delivered.</p><p>
+<%= link_to new_tree_path do %>
           
-         Return to #313treeproject
+         New Tree Request Form
 		 
       <% end %>
     </div>

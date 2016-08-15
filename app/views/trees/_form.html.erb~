@@ -5,51 +5,39 @@
 
 <div class="row" style="margin-top: -10px;">
   <h4 class="text-center" style="font-weight: normal; color:white;">#313treeproject</h4>
-  <hr style="width:30%;"/>
-  <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+   <hr style="width:30%;"/>
+   <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
     <div class="well" id="about-well">
 
 <%= form_for @tree do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
-		  
-		  <h6>REQUEST TREE WORK</h6>
+          
+          
+		  <h20>TREE SUPPORT REQUEST</h20>
+		  <small><a href="mailto:ter.reub@gmail.com">Need support completing your request?</a></small>
 
-          <%= f.label :tree_owner_name %>
+          <%= f.label :tree_owner_name? %>
           <%= f.text_field :owner_name, class: "form-control custom-form-control" %><br>
 
-          <%= f.label :tree_address %>
+          <%= f.label :tree_address? %>
           <%= f.text_field :adress, class: "form-control custom-form-control", size:'25x5'%><br>
 
-          <%= f.label :tree_zip_code %>
+          <%= f.label :tree_zip_code? %>
           <%= f.text_field :zip_code, class: "form-control custom-form-control" %><br>
 		  
-		  <%= f.label :owner_phone %>
+		  <%= f.label :owner_phone? %>
           <%= f.text_field :owner_phone, class: "form-control custom-form-control" %><br>
 		  
-		  <%= f.label :current_estimate %> This helps us track overall project savings and is not required
+		  <%= f.label :current_estimate? %> <br><i>(not required)</i>
           <%= f.text_field :current_estimate, class: "form-control custom-form-control" %><br>
 		  
-		  <%= f.label :special_message %> Let us know if there is anything else you think we need to know here.
+		  <%= f.label :special_message? %> <br><i>Is there something we forgot to ask?</i>
           <%= f.text_area :message, class: "form-control custom-form-control" %><br>
 		  
 		  <hr>
 		  
-		  <h6>SUGGEST AN ARBORIST</h6>
-		  
-		  <%= f.label :company_name %>
-          <%= f.text_field :company_name, class: "form-control custom-form-control" %><br>
-		  
-		  <%= f.label :company_contact %>
-          <%= f.text_field :company_contact, class: "form-control custom-form-control" %><br>
-
-		  <%= f.label :compant_phone %>
-          <%= f.text_field :company_phone, class: "form-control custom-form-control" %><br>
-		  
-		  <hr>		 		  
-		  
-          <br>
-          <%= f.submit @tree.new_record? ? "SEND INFORMATION" : "Edit", class: "btn btn-block purple-button" %>
+		 <%= f.submit @tree.new_record? ? "SEND REQUEST" : "Edit", class: "btn btn-block purple-button" %>
       <% end %>
     </div>
-  </div>
+    </div>
 </div>
