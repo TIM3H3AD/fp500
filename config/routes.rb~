@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   get '/313tree' => 'static_pages#313tree'
   get '/313Tree' => 'static_pages#313tree'
-  get '/313treeteam' => 'static_pages#313treeteam'
-  get '/313Treeteam' => 'static_pages#313treeteam'
   post '/login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   delete 'destroy_account' => 'users#destroy'
