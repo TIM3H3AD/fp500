@@ -13,7 +13,7 @@ class TreesController < ApplicationController
       flash[:danger] = "The form contains errors"
       render :new
     end
-end
+  end
 
   def index
   @trees = Tree.all
@@ -28,10 +28,11 @@ end
   end
 
   def update
-    @tree.update_attributes(tree_params)
+  	@tree = Tree.find(params[:id])  
+  	@tree.update_attributes(tree_params)
     if @tree.save
       flash[:success] = "Update successful"
-      redirect_to @tree
+      redirect_to :treeteam 
     else
       flash[:danger] = "Something went wrong"
       render :edit
@@ -39,19 +40,21 @@ end
   end
 
   def destroy
+  	@tree = Tree.find(params[:id])   
     if @tree.destroy
       flash[:success] = "Your Tree was deleted successfully"
-      redirect_to root_url
+      redirect_to :treeteam
     else
       flash[:danger] = "Could not delete"
       render @tree
     end
   end
 
-private
+  private
 
   def tree_params
-    params.require(:tree).permit(:owner_name, :adress, :zip_code, :message, :current_estimate, :company_name, :company_contact, :company_phone)
+    params.require(:tree).permit(:owner_name, :adress, :zip_code, :owner_phone, :message, :current_estimate, :company_name, :company_contact, :company_phone)
   end
-
+  
  end
+

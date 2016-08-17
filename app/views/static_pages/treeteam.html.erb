@@ -1,0 +1,33 @@
+<h1>#313treeproject</h1>
+<h1>TEAM VIEW</h1>
+<hr>
+<small>Need technical support or have a question? Call 313-740-7798 or email <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></small> .
+<hr>
+<h4>Trees in the D</h4> <%= link_to 'NEW TREE', new_tree_path %>
+<table class="center" cellpadding="10">
+    <tr align="center">
+		<th></th>
+    	<th>Name</th>
+        <th>Adress</th>
+        <th>Zip</th>
+        <th>#</th>
+        <th align="center">ID</th>
+        <th></th>
+	<th></th>
+    </tr>
+
+  <% @trees = Tree.all() %>
+  <% @trees.each do |tree| %>
+   <tr align="left">
+	  <td></td>
+      <td><p><%= tree.owner_name %></p> </td>
+	  <td><p><%= tree.adress %></p> </td>
+	  <td><p><%= tree.zip_code %></p> </td>
+	  <td><p><%= tree.owner_phone %></p> </td>
+	  <td align="center"><p><%= tree.id %></p> </td>
+      <td><%= link_to 'Edit', edit_tree_path(tree) %></td>
+	  <td><%= link_to 'Delete', tree_path(tree),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
