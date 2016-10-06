@@ -17,7 +17,7 @@
 <p>THANK YOU! from |
 <% @trees = Tree.all() %>
 <% @trees.each do |tree| %> 
-<%= tree.owner_name %> |
+<%= tree.adress %> <%= tree.street_name %> |
 <% end %>
 </p>
 </td>
