@@ -12,6 +12,7 @@
         <th>Street Name</th>
         <th>Zip</th>
         <th>#</th>
+        <th>Note</th>
         <th align="center">ID</th>
         <th></th>
 	<th></th>
@@ -26,6 +27,7 @@
 	  <td><p><%= tree.street_name %></p> </td>
 	  <td><p><%= tree.zip_code %></p> </td>
 	  <td><p><%= tree.owner_phone %></p> </td>
+	  <td><p><%= tree.message %></p> </td>
 	  <td align="center"><p><%= tree.id %></p> </td>
       <td><%= link_to 'Edit', edit_tree_path(tree) %></td>
 	  <td><%= link_to 'Delete', tree_path(tree),
