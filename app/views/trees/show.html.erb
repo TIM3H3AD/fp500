@@ -1,10 +1,9 @@
-<% provide(:title, @tree.adress) %>
+<% provide(:title, @tree.adress @tree.street_name) %>
 
 <div class="row" style="margin-top: 20px;">
   <div class="col-md-6 col-md-offset-1">
     <div class="well border-blue" style="background: whitesmoke;">
-
-<h21> * <%= @tree.adress %> * </h21>
+<h21> <%= @tree.adress %> <%= @tree.street_name %> </h21>
 	<hr>
 <h21><%= @tree.zip_code %></h21>
 	<hr>

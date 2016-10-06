@@ -32,7 +32,7 @@ class TreesController < ApplicationController
   	@tree.update_attributes(tree_params)
     if @tree.save
       flash[:success] = "Update successful"
-      redirect_to @tree
+      redirect_to :treeteam 
     else
       flash[:danger] = "Something went wrong"
       render :edit
@@ -43,7 +43,7 @@ class TreesController < ApplicationController
   	@tree = Tree.find(params[:id])   
     if @tree.destroy
       flash[:success] = "Your Tree was deleted successfully"
-      redirect_to root_url
+      redirect_to :treeteam
     else
       flash[:danger] = "Could not delete"
       render @tree

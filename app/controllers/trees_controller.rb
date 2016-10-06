@@ -53,7 +53,7 @@ class TreesController < ApplicationController
   private
 
   def tree_params
-    params.require(:tree).permit(:owner_name, :adress, :zip_code, :owner_phone, :message, :current_estimate, :company_name, :company_contact, :company_phone)
+    params.require(:tree).permit(:owner_name, :adress, :street_name, :zip_code, :owner_phone, :message, :current_estimate, :company_name, :company_contact, :company_phone)
   end
   
  end

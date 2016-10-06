@@ -8,7 +8,8 @@
     <tr align="center">
 		<th></th>
     	<th>Name</th>
-        <th>Adress</th>
+        <th>Address</th>
+        <th></th>
         <th>Zip</th>
         <th>#</th>
         <th align="center">ID</th>
@@ -21,7 +22,7 @@
    <tr align="left">
 	  <td></td>
       <td><p><%= tree.owner_name %></p> </td>
-	  <td><p><%= tree.adress %></p> </td>
+	  <td><p><%= tree.adress %> <%= tree.street_name %></p> </td>
 	  <td><p><%= tree.zip_code %></p> </td>
 	  <td><p><%= tree.owner_phone %></p> </td>
 	  <td align="center"><p><%= tree.id %></p> </td>

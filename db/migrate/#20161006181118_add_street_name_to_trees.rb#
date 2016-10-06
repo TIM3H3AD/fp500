@@ -1,0 +1,5 @@
+class AddStreetNameToTrees < ActiveRecord::Migration
+  def change
+  	 add_column :trees, :street_name, :string 
+  end
+end
