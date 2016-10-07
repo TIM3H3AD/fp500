@@ -17,23 +17,27 @@
 		  <small><a href="mailto:ter.reub@gmail.com">Need support completing your request?</a></small>
 
           <%= f.label :House_number? %>
-          <br><i> House or lot number. </i>
+          <br><i> House or lot number? </i>
           <%= f.text_field :adress, class: "form-control custom-form-control", size:'25x5'%><br>
 
           <%= f.label :street_name? %>
-          <br><i>Steet name tree is on. </i>
+          <br><i>Steet name the tree is on? </i>
           <%= f.text_field :street_name, class: "form-control custom-form-control" %><br>
           
           <%= f.label :tree_zip_code? %>
-          <br><i>Tree's zipcode :-) </i>
+          <br><i>Zipcode where tree is located? </i>
           <%= f.text_field :zip_code, class: "form-control custom-form-control" %><br>
                      
-          <%= f.label :owner_phone? %>
-          <br><i>Best number to reach the homeowner. </i>
+          <%= f.label :contact_name? %>
+          <br><i>Best person to contact? </i>
+          <%= f.text_field :owner_name, class: "form-control custom-form-control" %><br>
+          
+          <%= f.label :contact_phone? %>
+          <br><i>Best number to reach the contact? </i>
           <%= f.text_field :owner_phone, class: "form-control custom-form-control" %><br>
  
 		  <%= f.label :current_estimate? %>
-		  <br><i>Leave blank if you haven't had an estimate yet </i>
+		  <br><i>Leave blank if you haven't had an estimate yet. </i>
           <%= f.text_field :current_estimate, class: "form-control custom-form-control" %><br>
 		  
 		  <%= f.label :note %> 
