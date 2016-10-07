@@ -1,8 +1,6 @@
 <h1>#313treeproject</h1>
 <p>Creating an economy for urgent and affordable tree work to stabilize communities by protecting Detroit homeowners from life threatening foliage.</p>
 <hr>
-<small>Need support completing your request? Pls email me! <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></small>
-<hr>
 <h6>Do you know of a tree that needs serviced?</h6>
 <p>Please click the SERVICE REQUEST link below.</p>
  <a href="/trees/new">
@@ -10,19 +8,12 @@
 </a>
 <hr>
 <h1>TOTAL REQUESTS: <%= Tree.count %></h1>
-<table>
-<p>
-<tr>
-<td align="center" valign="middle">
 <p>
 <% @trees = Tree.all() %>
 <% @trees.each do |tree| %> 
 <%= tree.adress %> <%= tree.street_name %> <br>
 <% end %>
 </p>
-</td>
-</tr>
-</table>
 
 <hr>
 <h6>WAYS TO SUPPORT THE PROJECT</h6>
@@ -38,7 +29,7 @@
 <i>$20/ozcoin sold will immediately support the #313treeproject</i></p>
 
 <hr>
-<small>Would you like to list your product or service? Pls email me! <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></small>
+<small>Need support? <a href="mailto:ter.reub@gmail.com">ter.reub@gmail.com</a></small>
 <hr>
 
 <h6>ABOUT</h6>
