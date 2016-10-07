@@ -20,23 +20,23 @@
           <br><i>The name you type here will be on our homepage. </i>
           <%= f.text_field :owner_name, class: "form-control custom-form-control" %><br>
           
-          <%= f.label :owner_phone? %>
-          <br><i>Best number to reach the homeowner. </i>
-          <%= f.text_field :owner_phone, class: "form-control custom-form-control" %><br>
-
-          <%= f.label :street_number? %>
-          <br><i>Address of home threatened by the tree. </i>
+          <%= f.label :House_number? %>
+          <br><i> House or lot number. </i>
           <%= f.text_field :adress, class: "form-control custom-form-control", size:'25x5'%><br>
 
           <%= f.label :street_name? %>
-          <br><i>The name you type here will be on our homepage. </i>
+          <br><i>Steet name tree is on. </i>
           <%= f.text_field :street_name, class: "form-control custom-form-control" %><br>
           
           <%= f.label :tree_zip_code? %>
           <br><i>Tree's zipcode :-) </i>
           <%= f.text_field :zip_code, class: "form-control custom-form-control" %><br>
-		  
-		   <%= f.label :current_estimate? %>
+                     
+          <%= f.label :owner_phone? %>
+          <br><i>Best number to reach the homeowner. </i>
+          <%= f.text_field :owner_phone, class: "form-control custom-form-control" %><br>
+ 
+		  <%= f.label :current_estimate? %>
 		  <br><i>Leave blank if you haven't had an estimate yet </i>
           <%= f.text_field :current_estimate, class: "form-control custom-form-control" %><br>
 		  
@@ -46,8 +46,9 @@
 		  
 		  <hr>
 		  
-		 <%= f.submit @tree.new_record? ? "SEND REQUEST" : "Edit", class: "btn btn-block purple-button" %>
-      <% end %>
+		  <%= f.submit @tree.new_record? ? "SEND REQUEST" : "Edit", class: "btn btn-block purple-button" %>          
+		  
+		 <% end %>
     </div>
     </div>
 </div>
