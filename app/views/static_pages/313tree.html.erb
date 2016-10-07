@@ -8,12 +8,12 @@
 </a>
 <hr>
 <h1>TOTAL REQUESTS: <%= Tree.count %></h1>
-<p>
+<p1>
 <% @trees = Tree.all() %>
 <% @trees.each do |tree| %> 
 <%= tree.adress %> <%= tree.street_name %>, <%= tree.zip_code %> <br>
 <% end %>
-</p>
+</p1>
 
 <hr>
 <h6>WAYS TO SUPPORT THE PROJECT</h6>
