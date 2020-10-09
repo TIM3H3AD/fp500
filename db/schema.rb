@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,69 +10,69 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161006183050) do
+ActiveRecord::Schema.define(version: 2016_10_06_183050) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "things", force: :cascade do |t|
-    t.integer  "creator_id"
-    t.string   "title"
-    t.string   "location"
-    t.string   "description"
-    t.integer  "price"
-    t.string   "image_1"
-    t.string   "image_2"
-    t.string   "btc_qr"
-    t.string   "website"
-    t.string   "checkout_cc"
-    t.string   "checkout_btc"
-    t.string   "hashtag"
-    t.integer  "view_count"
-    t.integer  "age"
-    t.string   "special_offer"
-    t.string   "broadcast"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.integer "creator_id"
+    t.string "title"
+    t.string "location"
+    t.string "description"
+    t.integer "price"
+    t.string "image_1"
+    t.string "image_2"
+    t.string "btc_qr"
+    t.string "website"
+    t.string "checkout_cc"
+    t.string "checkout_btc"
+    t.string "hashtag"
+    t.integer "view_count"
+    t.integer "age"
+    t.string "special_offer"
+    t.string "broadcast"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "trees", force: :cascade do |t|
-    t.string   "owner_name"
-    t.string   "adress"
-    t.integer  "zip_code"
-    t.string   "owner_phone"
-    t.integer  "current_estimate"
-    t.integer  "actual_cost"
-    t.text     "message"
-    t.string   "company_name"
-    t.string   "company_contact"
-    t.string   "company_phone"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-    t.string   "street_name"
+    t.string "owner_name"
+    t.string "adress"
+    t.integer "zip_code"
+    t.string "owner_phone"
+    t.integer "current_estimate"
+    t.integer "actual_cost"
+    t.text "message"
+    t.string "company_name"
+    t.string "company_contact"
+    t.string "company_phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "street_name"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.text     "bio"
-    t.string   "email"
-    t.string   "location"
-    t.string   "phone"
-    t.string   "twitter"
-    t.string   "facebook"
-    t.string   "farmer_or_pirate"
-    t.string   "logo"
-    t.string   "wallpaper"
-    t.string   "hashtag"
-    t.string   "campaign"
-    t.string   "crowdfund"
-    t.string   "store"
-    t.integer  "view_count"
-    t.string   "password_digest"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.boolean  "admin",            default: false
-    t.string   "btc_address"
+    t.string "name"
+    t.text "bio"
+    t.string "email"
+    t.string "location"
+    t.string "phone"
+    t.string "twitter"
+    t.string "facebook"
+    t.string "farmer_or_pirate"
+    t.string "logo"
+    t.string "wallpaper"
+    t.string "hashtag"
+    t.string "campaign"
+    t.string "crowdfund"
+    t.string "store"
+    t.integer "view_count"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
+    t.string "btc_address"
   end
 
 end

@@ -1,4 +1,4 @@
-class RemoveStreetNameFromTrees < ActiveRecord::Migration
+class RemoveStreetNameFromTrees < ActiveRecord::Migration[5.2]
   def change
   end
 end

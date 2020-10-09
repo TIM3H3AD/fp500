@@ -26,7 +26,7 @@ development:
   database: xotoz_development
   adapter: postgresql
   host: localhost
-  username: wb
+  username: root
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -35,7 +35,7 @@ development:
   # username: wb
 
   # The password associated with the postgres role (username).
-  password: okmijn12
+  password: okmijn
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have

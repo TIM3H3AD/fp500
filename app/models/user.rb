@@ -1,8 +1,8 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
 
   # Associations
 
-  has_many :created_things, class_name: Thing, foreign_key: :creator_id, :dependent => :destroy
+  has_many :created_things, class_name: 'Thing', foreign_key: :creator_id, :dependent => :destroy
  
 ###########################################################
 

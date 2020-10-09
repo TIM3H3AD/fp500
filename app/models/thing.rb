@@ -1,7 +1,7 @@
-class Thing < ActiveRecord::Base
+class Thing < ApplicationRecord
   # Associations
 
-  belongs_to :creator, class_name: User
+  belongs_to :creator, class_name: 'User'
 
   ###################################
 
